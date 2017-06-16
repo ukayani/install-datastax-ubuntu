@@ -47,7 +47,7 @@ elif [[ $cloud_type == "aws" ]]; then
   opscenter_ip=$opscenter_dns_name
 fi
 
-if [[ $cloud_type == "gce" ]] || [[ $cloud_type == "gke" ] || [[ $cloud_type == "aws" ]]; then
+if [[ $cloud_type == "gce" ]] || [[ $cloud_type == "gke" ]] || [[ $cloud_type == "aws" ]]; then
   # On Google private IPs are globally routable within GCE
   # We've also been seeing issues using the public ones for broadcast.
   # So, we're just going to use the private for everything.
